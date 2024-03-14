@@ -33,6 +33,8 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 
 const corsOptions = {
   origin: "*",
+  methods:["GET" , "POST"],
+  credentails: true,
 };
 app.use(cors(corsOptions));
 
